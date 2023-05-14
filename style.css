@@ -26,13 +26,14 @@ body {
     margin-bottom: 5px;
 }
 
-#mode:hover {
+.mode:hover {
     box-shadow: 0px 0px 8px white;
 }
 
-#mode:active {
+.mode:active {
     color: #000;
 }
+
 
 header {
     display: flex;
