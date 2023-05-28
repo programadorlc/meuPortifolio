@@ -67,41 +67,66 @@ h2 {
 }
 
 .icon {
-    margin: 24px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     background-color: #212121;
     box-shadow: 0px 0px 5px #8f8f8f;
     border-radius: 200px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width: 80%;
-    height: 15px;
+    width: calc(100% - 10px);
+    height: 30px;
     padding: 16px;
     text-align: center;
+}
+
+.ph-instagram-logo {
+    scale: 2;
+}
+
+.ph-whatsapp-logo {
+    scale: 2;
+}
+
+.ph-github-logo {
+    scale: 2;
 }
 
 .hover1:hover {
     background: -webkit-linear-gradient(#405DE6, #5851D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80, #FFFFFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: scale 300ms both;
 }
 
 .hover2:hover {
     background: -webkit-linear-gradient(#25D366, #505050);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: scale 300ms both;
 }
 
 .hover3:hover {
     background: -webkit-linear-gradient(#000, #505050);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: scale 300ms both;
+}
+
+.active:active {
+    animation: ease;
 }
 
 a {
     background: -webkit-linear-gradient(#fff, #555);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: auto;
+}
+
+@keyframes scale{
+    to {scale: 3}
 }
 
 
